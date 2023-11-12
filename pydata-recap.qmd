@@ -9,7 +9,7 @@ format:
 # Introduction {background-image="assets/images/chat-gpt-takes-manhattan.png"}
 
 ::: notes
-ChatGPT was there, but as a friendly guest more than the conqueror of worlds it's become in other contexts. The emphasis was still on Python, and the big theme seemed to be the emergence of credible competitors to streamlit - Taipy and especially Quarto / Posit. 
+ChatGPT was there, but as a friendly guest more than the conqueror of worlds it's become in other contexts. The emphasis was still on Python, and the big theme seemed to be the emergence of credible competitors to streamlit - Taipy and especially Quarto / Posit.
 :::
 
 ------------------------------------------------------------------------
@@ -19,14 +19,23 @@ ChatGPT was there, but as a friendly guest more than the conqueror of worlds it'
 ## Time Warp {background-image="assets/images/gpt-time-machine.png"}
 
 ::: notes
-I attended PyData 2022 in the beginning of November. On November 30th, 2022, OpenAI made ChatGPT available. It didn't change everything, but it changed a whole lot. Notably, I didn't see people using some of ChatGPT's more interesting capabilities, like automated data analysis. It's not something the people there would want or need. But, it is something that non-DS people should know about and use. 
+PyData 2022's last day was November. On November 30th, 2022, OpenAI made ChatGPT available. It didn't change everything, but it changed a whole lot. Notably, I didn't see people using some of ChatGPT's more interesting capabilities, like automated data analysis. It's not something the people there would want or need. But, it is something that non-DS people should know about and use.
 :::
-
 
 ## Data Science Application Vendors
 
+| Col1              | Col2                       |
+|-------------------|----------------------------|
+| Taipy logo        | Quarto logo                |
+| Streamlit + Vizzu | Microsoft (Excel + Python) |
+
 -   Spotlight on Quarto
+
 -   Advancements in DS tools
+
+    ::: notes
+    One of the big themes this year was the idea of getting our analysis in front of customers in more engaging ways. Streamlit has been here for a long time and partnered with Vizzu this year, a new visualization company. TaiPy was also present, though I haven't played with their tools yet. The big story was Quarto, from Posit. Posit was RStudio, and has been renamed to reflect its new tool-agnostic emphasis. I was very impressed with what I saw, which includes the tools I used to make this presentation and my personal blog! But, in terms of impact to our daily lives, the big one is likely to be Python in Excel. Get ready for lots of interest from Finance departments as Microsoft starts blasting this out to them.
+    :::
 
 ------------------------------------------------------------------------
 
@@ -35,7 +44,7 @@ I attended PyData 2022 in the beginning of November. On November 30th, 2022, Ope
 ![](assets/images/retrieval-augmented-generation.png){fig-alt="Workflow of Retrieval Augmented Generation systems"}
 
 ::: notes
-Retrieval Augmented Generation (RAG) was a popular topic, with two sessions dedicated to building example apps. It reflects a reality that the tools are wonderfully useful, but only on the things they have been trained on. 
+Retrieval Augmented Generation (RAG) was a popular topic, with two sessions dedicated to building example apps. It reflects a reality that the tools are wonderfully useful, but only on the things they have been trained on. Of course, mere days after this conference OpenAI announced that the ChatGPT knowledge base had been pushed forward to April 2023. They really do enjoy keeping us on our toes.
 :::
 
 ------------------------------------------------------------------------
@@ -46,29 +55,75 @@ Retrieval Augmented Generation (RAG) was a popular topic, with two sessions dedi
 -   What are LLMs good for?
 
 ::: notes
-We had a great keynote from Souminth Chintala, Meta Fellow and one of the architects of PyTorch. It was worth going through in some detail, because he was in a unique position to 
+We had a great keynote from Souminth Chintala, Meta Fellow and one of the architects of PyTorch. It was worth going through in some detail, because he was in a unique position to
 
+-   memes
+
+-   brainstorming (including this
 :::
 
 ------------------------------------------------------------------------
 
 # Personal Insights
 
-
-
 ------------------------------------------------------------------------
 
 ## Palmer's Penguins vs. Iris Dataset
 
--   Why Palmer’s Penguins is gaining popularity
--   Visual comparison with the Iris Dataset
+|                                                                  |                                                                  |
+|------------------------------------|------------------------------------|
+| ![](assets/images/Iris_dataset_scatterplot.svg.png){width="440"} | ![](assets/images/palmer-penguins.png){width="498" height="442"} |
+
+::: notes
+In back-to-back sessions, I noticed that instructors were using the "Palmer's Penguins" dataset. I thought that was interesting and asked why - it turns out that the author of the Iris dataset was a eugenicist, and so that dataset is considered in bad taste to use. That could be important, depending on your audience.
+:::
+
+## sktime for Time Series Processing
+
+::: notes
+I really liked the presentation on this tool. There was a lot of nonintuitive information available, including the fact that
+:::
 
 ------------------------------------------------------------------------
 
-## Deferred Operator in Ibis
+## Ibis
 
--   The Deferred Operator Explained
--   Example and Benefits
+![](assets/images/far_side_caveman_knife.jpg){fig-align="center"}
+
+------------------------------------------------------------------------
+
+## Updates on Ibis
+
+The Deferred Operator!
+
+``` {#ibis .python}
+import ibis 
+from ibis import _
+cnxn = ibis.sqlite.connect("data/census2000names.sqlite")
+surnames_t = cnxn.table("surnames")
+data = surnames_t.filter((_.name == "SMITH")|(_["rank"] ==1)).select(
+    _.year, _.name, _["rank"], _["count"]).execute()
+```
+
+```{python}
+import ibis 
+from ibis import _
+cnxn = ibis.sqlite.connect("data/census2000names.sqlite")
+surnames_t = cnxn.table("surnames")
+data = surnames_t.filter((_.name == "SMITH")|(_["rank"] ==1)).select(
+    _.year, _.name, _["rank"], _["count"]).execute()
+```
+
+::: notes
+I first heard of Ibis at last year's PyData, and started playing with it immediately. In just one year, it's gone through 3 major versions, added more backends, and in general gotten a lot more impressive. But, it was little features that really blew my mind. For example, the "deferred" operator, which has already saved me so much typing.
+:::
+
+------------------------------------------------------------------------
+
+## Saved For Later
+
+-   Hypothesis Testing
+-   HackMD
 
 ------------------------------------------------------------------------
 
