@@ -14,6 +14,12 @@ ChatGPT was there, but as a friendly guest more than the conqueror of worlds it'
 
 ------------------------------------------------------------------------
 
+## Quick Poll
+
+![](assets/images/how-do-you-use-ai-at-work.png)
+
+------------------------------------------------------------------------
+
 # Time Warp {background-image="assets/images/gpt-time-machine.png"}
 
 ::: notes
@@ -105,7 +111,7 @@ Retrieval Augmented Generation (RAG) was a popular topic, with two sessions dedi
 ## Palmer's Penguins vs. Iris Dataset
 
 +------------------------------------------------------------------+------------------------------------------------------------------+
-| ![](assets/images/Iris_dataset_scatterplot.svg.png){width="440"} | ![](assets/images/palmer-penguins.png){width="498" height="442"} |
+| ![](assets/images/Iris_dataset_scatterplot.svg.png){width="442"} | ![](assets/images/palmer-penguins.png){width="498" height="442"} |
 +------------------------------------------------------------------+------------------------------------------------------------------+
 
 ::: notes
@@ -114,13 +120,15 @@ In back-to-back sessions, I noticed that instructors were using the "Palmer's Pe
 
 ## sktime for Time Series Processing
 
+![](assets/images/contest-of-prowess.png){fig-align="center"}
+
 ::: notes
 I really liked the presentation on this tool. There was a lot of nonintuitive information available, including the fact that
 :::
 
 ------------------------------------------------------------------------
 
-## In Defense of Ibis
+## A Shameless Plug for Ibis
 
 ![](assets/images/far_side_caveman_knife.jpg){fig-align="center"}
 
