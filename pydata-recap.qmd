@@ -14,52 +14,82 @@ ChatGPT was there, but as a friendly guest more than the conqueror of worlds it'
 
 ------------------------------------------------------------------------
 
-# Key Highlights
-
-## Time Warp {background-image="assets/images/gpt-time-machine.png"}
+# Time Warp {background-image="assets/images/gpt-time-machine.png"}
 
 ::: notes
 PyData 2022's last day was November. On November 30th, 2022, OpenAI made ChatGPT available. It didn't change everything, but it changed a whole lot. Notably, I didn't see people using some of ChatGPT's more interesting capabilities, like automated data analysis. It's not something the people there would want or need. But, it is something that non-DS people should know about and use.
 :::
 
+------------------------------------------------------------------------
+
+# Keynote
+
+## AI and the Stuff Built for AI {background-image="assets/images/renaissance-cat.png"}
+
+Keynote by Souminth Chintala, Meta Fellow & co-creator of PyTorch
+
+::: notes
+We had a great keynote from Souminth Chintala, Meta Fellow and one of the architects of PyTorch. One of the important points he brings up is that we have been conditioned to associate eloquence with intelligence, and ChatGPT is very, very eloquent. We look at this image and think "What an intelligent cat!". Similarly, the chat interface and even touches like ChatGPT apparently "typing" in response to us are meant to preserve the illusion that we are talking to another consciousness. But we aren't! And you have to be aware of that fact when it gives you answers.
+:::
+
+## Should we use AI? 
+
+![](assets/images/distracted_boyfriend_meme.jpg){width="876"}
+
+## Don't Automate, Accelerate!
+
+|                                          |                                |
+|------------------------------------------|--------------------------------|
+| ![](assets/images/engineer-relaxing.png) | ![](assets/images/copilot.png) |
+
+## What is Data Science for?
+
+![](assets/images/data-scientists.png)
+
+::: notes
+There's a temptation to think that we can somehow use tools like ChatGPT to automatically get the insights that we receive now using data science tools. The thing that's missing from that picture is our judgment and our reasoning, which is what produces the insight. We have to really know and understand the process and the business, and that's not something we can automate. It takes a lot of effort to step out of the maze and try to really see what's going on, and we bring a lot of our humanity to the job, not just the tools we use.
+:::
+
+# What is AI for?
+
+## Things We Know but Don't Remember
+
+![](assets/images/stack-overflow-must-die.png)
+
+## Brainstorming
+
+![](assets/images/brainstorming.png)
+
+## Fun
+
+![](assets/images/fun.png)
+
+# Conference Themes
+
 ## Data Science Application Vendors
 
-| Col1              | Col2                       |
-|-------------------|----------------------------|
-| Taipy logo        | Quarto logo                |
-| Streamlit + Vizzu | Microsoft (Excel + Python) |
++---------------------------------------------------------------------+-------------------------------+
+| ![](assets/images/taipy.webp){width="278"}                          | ![](assets/images/posit.webp) |
+|                                                                     |                               |
+| ![](assets/images/streamlit-logo-secondary-lightmark-lighttext.png) |                               |
++---------------------------------------------------------------------+-------------------------------+
 
--   Spotlight on Quarto
-
--   Advancements in DS tools
-
-    ::: notes
-    One of the big themes this year was the idea of getting our analysis in front of customers in more engaging ways. Streamlit has been here for a long time and partnered with Vizzu this year, a new visualization company. TaiPy was also present, though I haven't played with their tools yet. The big story was Quarto, from Posit. Posit was RStudio, and has been renamed to reflect its new tool-agnostic emphasis. I was very impressed with what I saw, which includes the tools I used to make this presentation and my personal blog! But, in terms of impact to our daily lives, the big one is likely to be Python in Excel. Get ready for lots of interest from Finance departments as Microsoft starts blasting this out to them.
-    :::
+``` notes
+One of the big themes this year was the idea of getting our analysis in front of customers in more engaging ways. Streamlit has been here for a long time and partnered with Vizzu this year, a new visualization company. TaiPy was also present, though I haven't played with their tools yet. The big story was Quarto, from Posit. Posit was RStudio, and has been renamed to reflect its new tool-agnostic emphasis. They also made a splashy hire, announcing that Wes McKinney (creator of Pandas) was joining the company. I was very impressed with what I saw, which includes the tools I used to make this presentation and my personal blog! But, in terms of impact to our daily lives, the big one is likely to be Python in Excel. Get ready for lots of interest from Finance departments as Microsoft starts blasting this out to them.
+```
 
 ------------------------------------------------------------------------
+
+## Python in Excel
+
+![](assets/images/python_in_excel.png)
 
 ## Retrieval Augmented Generation
 
 ![](assets/images/retrieval-augmented-generation.png){fig-alt="Workflow of Retrieval Augmented Generation systems"}
 
 ::: notes
-Retrieval Augmented Generation (RAG) was a popular topic, with two sessions dedicated to building example apps. It reflects a reality that the tools are wonderfully useful, but only on the things they have been trained on. Of course, mere days after this conference OpenAI announced that the ChatGPT knowledge base had been pushed forward to April 2023. They really do enjoy keeping us on our toes.
-:::
-
-------------------------------------------------------------------------
-
-## Keynote on LLMs
-
--   Highlights from the Keynote
--   What are LLMs good for?
-
-::: notes
-We had a great keynote from Souminth Chintala, Meta Fellow and one of the architects of PyTorch. It was worth going through in some detail, because he was in a unique position to
-
--   memes
-
--   brainstorming (including this
+Retrieval Augmented Generation (RAG) was a popular topic, with two sessions dedicated to building example apps. It reflects a reality that the tools are wonderfully useful, but only on the things they have been trained on. Of course, mere days after this conference OpenAI announced that the ChatGPT knowledge base had been pushed forward to April 2023. They really do enjoy keeping us on our toes. There were several sessions on this tech. But, it seems like one of the problems here, and a problem for LLMs in general, is that no one knows for sure how (or if) this really works.
 :::
 
 ------------------------------------------------------------------------
@@ -70,12 +100,12 @@ We had a great keynote from Souminth Chintala, Meta Fellow and one of the archit
 
 ## Palmer's Penguins vs. Iris Dataset
 
-|                                                                  |                                                                  |
-|------------------------------------|------------------------------------|
++------------------------------------------------------------------+------------------------------------------------------------------+
 | ![](assets/images/Iris_dataset_scatterplot.svg.png){width="440"} | ![](assets/images/palmer-penguins.png){width="498" height="442"} |
++------------------------------------------------------------------+------------------------------------------------------------------+
 
 ::: notes
-In back-to-back sessions, I noticed that instructors were using the "Palmer's Penguins" dataset. I thought that was interesting and asked why - it turns out that the author of the Iris dataset was a eugenicist, and so that dataset is considered in bad taste to use. That could be important, depending on your audience.
+In back-to-back sessions, I noticed that instructors were using the "Palmer's Penguins" dataset. I thought that was interesting and asked why - it turns out that the author of the Iris dataset was a eugenicist, and so that dataset is considered in bad taste to use. That could be important, depending on your audience, and especially important if you are preparing tutorials or otherwise using datasets to investigate tool capabilities.
 :::
 
 ## sktime for Time Series Processing
@@ -86,15 +116,13 @@ I really liked the presentation on this tool. There was a lot of nonintuitive in
 
 ------------------------------------------------------------------------
 
-## Ibis
+## Ibis and the War over Small Data
 
 ![](assets/images/far_side_caveman_knife.jpg){fig-align="center"}
 
 ------------------------------------------------------------------------
 
-## Updates on Ibis
-
-The Deferred Operator!
+## Ibis Deferred Operator!
 
 ``` {#ibis .python}
 import ibis 
@@ -112,22 +140,26 @@ cnxn = ibis.sqlite.connect("data/census2000names.sqlite")
 surnames_t = cnxn.table("surnames")
 data = surnames_t.filter((_.name == "SMITH")|(_["rank"] ==1)).select(
     _.year, _.name, _["rank"], _["count"]).execute()
+data
 ```
 
 ::: notes
-I first heard of Ibis at last year's PyData, and started playing with it immediately. In just one year, it's gone through 3 major versions, added more backends, and in general gotten a lot more impressive. But, it was little features that really blew my mind. For example, the "deferred" operator, which has already saved me so much typing.
+I first heard of Ibis at last year's PyData, and started playing with it immediately. In just one year, it's gone through 3 major versions, added more backends, and in general gotten a lot more impressive. But, it was little features that really blew my mind. For example, the "deferred" operator, which has already saved me so much typing. It's so fantastically useful, making statements both shorter and more flexible. It goes to show that there's always something new to learn, even for things you think that you know.
 :::
 
 ------------------------------------------------------------------------
 
-## Saved For Later
+## Tantalizing for Later
 
 -   Hypothesis Testing
+-   Causality
 -   HackMD
+-   Diataxis
+-   Doxygen
 
 ------------------------------------------------------------------------
 
-# Interactive Discussion
+# Using ChatGPT for Work
 
 -   Share your thoughts on the topics covered
 -   How can you apply these insights?
@@ -140,3 +172,5 @@ I first heard of Ibis at last year's PyData, and started playing with it immedia
 -   Open Floor for Questions
 
 ------------------------------------------------------------------------
+
+# Thank You!
