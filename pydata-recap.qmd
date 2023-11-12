@@ -9,7 +9,7 @@ format:
 # Introduction {background-image="assets/images/chat-gpt-takes-manhattan.png"}
 
 ::: notes
-ChatGPT was there, but as a friendly guest more than the conqueror of worlds it's become in other contexts. The emphasis was still on Python, and the big theme seemed to be the emergence of credible competitors to streamlit - Taipy and especially Quarto / Posit.
+ChatGPT was there, but as a friendly guest more than the conqueror of worlds it's become in other contexts. The emphasis was still on Python, and the big theme seemed to be the emergence of credible competitors to streamlit - Taipy and especially Quarto / Posit. It's traditional in this kind of presentation to shock you with the revelation that I wrote it using the tools I learned about at the conference, and using AI, so let's get this out of the way - I wrote this presentation in Quarto for Reveal.js, and planned the whole thing out using ChatGPT. You can follow along with us n this link:
 :::
 
 ------------------------------------------------------------------------
@@ -32,15 +32,15 @@ Keynote by Souminth Chintala, Meta Fellow & co-creator of PyTorch
 We had a great keynote from Souminth Chintala, Meta Fellow and one of the architects of PyTorch. One of the important points he brings up is that we have been conditioned to associate eloquence with intelligence, and ChatGPT is very, very eloquent. We look at this image and think "What an intelligent cat!". Similarly, the chat interface and even touches like ChatGPT apparently "typing" in response to us are meant to preserve the illusion that we are talking to another consciousness. But we aren't! And you have to be aware of that fact when it gives you answers.
 :::
 
-## Should we use AI? 
+## Should we use AI?
 
 ![](assets/images/distracted_boyfriend_meme.jpg){width="876"}
 
 ## Don't Automate, Accelerate!
 
-|                                          |                                |
-|------------------------------------------|--------------------------------|
++------------------------------------------+--------------------------------+
 | ![](assets/images/engineer-relaxing.png) | ![](assets/images/copilot.png) |
++------------------------------------------+--------------------------------+
 
 ## What is Data Science for?
 
@@ -92,6 +92,10 @@ One of the big themes this year was the idea of getting our analysis in front of
 Retrieval Augmented Generation (RAG) was a popular topic, with two sessions dedicated to building example apps. It reflects a reality that the tools are wonderfully useful, but only on the things they have been trained on. Of course, mere days after this conference OpenAI announced that the ChatGPT knowledge base had been pushed forward to April 2023. They really do enjoy keeping us on our toes. There were several sessions on this tech. But, it seems like one of the problems here, and a problem for LLMs in general, is that no one knows for sure how (or if) this really works.
 :::
 
+## The War for your Laptop
+
+![](assets/images/the-war-for-your-laptop.png)
+
 ------------------------------------------------------------------------
 
 # Personal Insights
@@ -116,7 +120,7 @@ I really liked the presentation on this tool. There was a lot of nonintuitive in
 
 ------------------------------------------------------------------------
 
-## Ibis and the War over Small Data
+## In Defense of Ibis
 
 ![](assets/images/far_side_caveman_knife.jpg){fig-align="center"}
 
@@ -161,8 +165,29 @@ I first heard of Ibis at last year's PyData, and started playing with it immedia
 
 # Using ChatGPT for Work
 
--   Share your thoughts on the topics covered
--   How can you apply these insights?
+## How should we think about AI?
+
+![](assets/images/what-is-ai-for.png)
+
+::: notes
+It's tempting, and premature, to think that tools like DALL-E and ChatGPT will replace artists and programmers, respectively. My feeling is that they won't, but it took me a long time to get here and to get over my initial fear of these things. I love programming, and I imagine artists love doing their art just as much. I don't think that will ever go away. What these tools do, though, is accelerate us and give us access to capabilities we don't otherwise have. It's not going to replace the people doing the work, it's going to allow people who never had access to these things before to join in and contribute. I don't see how that can be anything but good for all of us. There aren't enough graphic artists and computer programmers in the world to bring their gifts everywhere they are needed - but this brings some light into otherwise dark corners.
+:::
+
+## The Promise and the Peril
+
+![](assets/images/panik_kalm_panik.jpg){fig-align="center"}
+
+::: notes
+I don't think AI will ultimately replace us. I think what it will do is accelerate delivery of things, and make our presentations and work more impactful. And as we all probably know, the reward for doing a good job is to be asked to do more of it, and faster.
+:::
+
+## How I use AI at Work
+
+-   Presentations (Like this one!)
+
+-   Research (trust, but verify!)
+
+-   Pair Programming
 
 ------------------------------------------------------------------------
 
