@@ -1,0 +1,87 @@
+---
+title: "PyData 2023 Recap"
+format: 
+  revealjs:
+    theme: "black"
+    transition: "slide"
+---
+
+# Introduction {background-image="assets/images/chat-gpt-takes-manhattan.png"}
+
+::: notes
+ChatGPT was there, but as a friendly guest more than the conqueror of worlds it's become in other contexts. The emphasis was still on Python, and the big theme seemed to be the emergence of credible competitors to streamlit - Taipy and especially Quarto / Posit. 
+:::
+
+------------------------------------------------------------------------
+
+# Key Highlights
+
+## Time Warp {background-image="assets/images/gpt-time-machine.png"}
+
+::: notes
+I attended PyData 2022 in the beginning of November. On November 30th, 2022, OpenAI made ChatGPT available. It didn't change everything, but it changed a whole lot. Notably, I didn't see people using some of ChatGPT's more interesting capabilities, like automated data analysis. It's not something the people there would want or need. But, it is something that non-DS people should know about and use. 
+:::
+
+
+## Data Science Application Vendors
+
+-   Spotlight on Quarto
+-   Advancements in DS tools
+
+------------------------------------------------------------------------
+
+## Retrieval Augmented Generation
+
+![](assets/images/retrieval-augmented-generation.png){fig-alt="Workflow of Retrieval Augmented Generation systems"}
+
+::: notes
+Retrieval Augmented Generation (RAG) was a popular topic, with two sessions dedicated to building example apps. It reflects a reality that the tools are wonderfully useful, but only on the things they have been trained on. 
+:::
+
+------------------------------------------------------------------------
+
+## Keynote on LLMs
+
+-   Highlights from the Keynote
+-   What are LLMs good for?
+
+::: notes
+We had a great keynote from Souminth Chintala, Meta Fellow and one of the architects of PyTorch. It was worth going through in some detail, because he was in a unique position to 
+
+:::
+
+------------------------------------------------------------------------
+
+# Personal Insights
+
+
+
+------------------------------------------------------------------------
+
+## Palmer's Penguins vs. Iris Dataset
+
+-   Why Palmer’s Penguins is gaining popularity
+-   Visual comparison with the Iris Dataset
+
+------------------------------------------------------------------------
+
+## Deferred Operator in Ibis
+
+-   The Deferred Operator Explained
+-   Example and Benefits
+
+------------------------------------------------------------------------
+
+# Interactive Discussion
+
+-   Share your thoughts on the topics covered
+-   How can you apply these insights?
+
+------------------------------------------------------------------------
+
+# Conclusion and Q&A
+
+-   Recap of Key Points
+-   Open Floor for Questions
+
+------------------------------------------------------------------------
